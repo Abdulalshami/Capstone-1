@@ -1,67 +1,134 @@
 .container {
-    background-color: var(--bg);
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  background-color: var(--bg);
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.main {
+  width: 100%;
+  margin: auto;
+}
+
+.title {
+  text-align: left;
+  margin: 20px;
+  font-size: 24px;
+  text-align: center;
+  color: #333; /* Default color */
+  transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.title:hover {
+  color: #0070f3; /* Blue color on hover */
+}
+
+.settingsBlock {
+  margin-bottom: 20px;
+  background: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.subheading {
+  font-size: 1.2em;
+  margin-bottom: 10px;
   
-  .main {
-    width: 100%;
-    margin: auto;
-  }
-  
-  .title {
-    text-align: left;
-    margin: 20px;
-    font-size: 24px;
-  }
-  
-  .settingsBlock {
-    margin-bottom: 20px;
-    background: #f7f7f7;
-    padding: 20px;
-    border-radius: 8px;
-  }
-  
-  .label {
-    display: block;
-    margin-bottom: 10px;
-  }
-  
-  .select {
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-  }
-  
-  .subheading {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-  }
-  
-  .link {
-    color: #0070f3;
-    text-decoration: none;
-  }
-  
-  .link:hover {
-    text-decoration: underline;
-  }
-  
-  .button {
-    padding: 10px 15px;
-    background-color: #0070f3;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    text-align: center;
-  }
-  
-  .button:hover {
-    background-color: #0056b3;
-  }
+}
+
+.subheading:hover {
+  text-decoration: underline;
+}
+
+.settingsBlock ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.settingsBlock li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.settingsBlock li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #0070f3;
+}
+
+.contactContainer {
+  background: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: auto; /* Push the container to the bottom */
+  margin-bottom: 20px; /* Add some space between the container and the rest of the content */
+}
+
+.contactSection {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap onto the next line */
+  gap: 20px; /* Add space between contact fields */
+}
+
+.contactField {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contactField p {
+  margin-left: 10px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.socialMedia {
+  margin-top: 20px; /* Add space between contact fields and social media icons */
+}
+
+.socialIcon {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.contactContainerFullWidth {
+  width: 100%;
+  background-color: #f0f0f0; /* Adjust as needed */
+  padding: 20px; /* Adjust as needed */
+  box-sizing: border-box;
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+.contactSection {
+  display: flex;
+  justify-content: space-between; /* Space items evenly */
+  width: 100%;
+  margin-top: 20px; /* Adjust as needed */
+}
+
+.contactField {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.icon {
+  width: 80px; /* Adjust icon size as needed */
+  height: 80px; /* Adjust icon size as needed */
+  margin-bottom: 10px; /* Adjust spacing between icon and title */
+}
+
+
