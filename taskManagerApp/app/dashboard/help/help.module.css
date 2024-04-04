@@ -93,12 +93,14 @@
 
 .socialMedia {
   margin-top: 20px; /* Add space between contact fields and social media icons */
+  margin-left: 20px;
 }
 
 .socialIcon {
   width: 30px;
   height: 30px;
-  margin-left: 10px;
+  margin-left: 20px;
+  
 }
 
 .contactContainerFullWidth {
@@ -123,12 +125,14 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+
 }
 
 .icon {
   width: 80px; /* Adjust icon size as needed */
   height: 80px; /* Adjust icon size as needed */
   margin-bottom: 10px; /* Adjust spacing between icon and title */
+  margin: auto; 
 }
 
 

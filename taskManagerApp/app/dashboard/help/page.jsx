@@ -118,7 +118,7 @@ export default function Help() {
           </div>
           <div className={styles.contactField}>
             <img src="https://cdn.iconscout.com/icon/free/png-256/free-email-17-83578.png" alt="Email" className={styles.icon} />
-            <p>info@seniorhome.com</p>
+            <p><a href="mailto:info@seniorhome.com">info@seniorhome.com</a></p>
           </div>
         </div>
       </div>
