@@ -86,10 +86,7 @@
   margin-left: 10px;
 }
 
-.icon {
-  width: 20px;
-  height: 20px;
-}
+
 
 .socialMedia {
   margin-top: 20px; /* Add space between contact fields and social media icons */
@@ -128,11 +125,25 @@
 
 }
 
-.icon {
-  width: 80px; /* Adjust icon size as needed */
-  height: 80px; /* Adjust icon size as needed */
-  margin-bottom: 10px; /* Adjust spacing between icon and title */
-  margin: auto; 
+
+
+.iconContainer {
+  display: flex;
+  justify-content: space-between; /* Evenly space items */
+  align-items: flex-end; /* Align items at the bottom */
+  width: 100%; /* Ensure full width */
+  padding: 0 20px; /* Add padding for spacing from left and right edges */
 }
 
+.contactField {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px; /* Adjust as needed for spacing between icons */
+}
 
+.icon {
+  width: 40px; /* Set width of icons */
+  height: 40px; /* Set height of icons */
+  margin-bottom: 5px; /* Add margin to bottom for */
+};

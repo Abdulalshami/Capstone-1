@@ -36,7 +36,6 @@ export default function Help() {
           )}
         </div>
         
-        
         <div className={styles.settingsBlock}>
           <h2 className={styles.subheading} onClick={() => toggleDropdown("news")}>
             News and Updates
@@ -108,17 +107,20 @@ export default function Help() {
       <div className={styles.contactContainerFullWidth}>
         <h2 className={styles.subheading}>Contact Us</h2>
         <div className={styles.contactSection}>
-          <div className={styles.contactField}>
-            <img src="https://cdn-icons-png.freepik.com/512/6948/6948614.png" alt="Address" className={styles.icon} />
-            <p>123 Main Street, City, Country</p>
-          </div>
-          <div className={styles.contactField}>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Phone_icon.png" alt="Phone" className={styles.icon} />
-            <p>123-456-7890</p>
-          </div>
-          <div className={styles.contactField}>
-            <img src="https://cdn.iconscout.com/icon/free/png-256/free-email-17-83578.png" alt="Email" className={styles.icon} />
-            <p><a href="mailto:info@seniorhome.com">info@seniorhome.com</a></p>
+          {/* Container for icons */}
+          <div className={styles.iconContainer}>
+            <div className={styles.contactField}>
+              <img src="https://cdn-icons-png.freepik.com/512/6948/6948614.png" alt="Address" className={styles.icon} />
+              <p>1171 Bow Valley Ln NE, Calgary, AB T2E 8B1</p>
+            </div>
+            <div className={styles.contactField}>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Phone_icon.png" alt="Phone" className={styles.icon} />
+              <p>(403) 265-2090</p>
+            </div>
+            <div className={styles.contactField}>
+              <img src="https://cdn.iconscout.com/icon/free/png-256/free-email-17-83578.png" alt="Email" className={styles.icon} />
+              <p><a href="mailto:info@seniorhome.com">bpaquette@prairiepayments.com</a></p>
+            </div>
           </div>
         </div>
       </div>
